@@ -9,17 +9,17 @@
   width: 800px;
   display: grid;
   grid-template-columns: repeat(16, auto);
-	border-top: solid black;
-	border-left: solid black;
+	border-top: solid #000000;
+	border-left: solid #000000;
 }
 
 #grid-container > * {
-  border-right: solid black;
-	border-bottom: solid black;
+  border-right: solid #000000;
+	border-bottom: solid #000000;
 }
 
 .color {
-  background-color: black;
+  background-color: #000000;
 }
 
 .reset {
