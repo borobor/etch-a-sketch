@@ -40,8 +40,17 @@ function resetGrid() {
 
 function draw() {
 gridItems.forEach(item => {
-	item.addEventListener('mouseover', () => {
-		item.classList.add("color");
+	item.addEventListener('mouseover', function(event) {
+		randomColor();
 	});
 });
+}
+
+function blackColor() {
+	event.target.classList.add("color");
+}
+
+function randomColor() {
+	let rand = () => Math.random()*256;
+	event.target.style.cssText = `background-color: rgb(${rand()}, ${rand()}, ${rand()})`;	
 }
