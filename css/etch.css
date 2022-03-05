@@ -1,12 +1,29 @@
+#wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
 #grid-container {
-	display: grid;
-	grid-template-columns: repeat(16, auto)
+	align-self: center;
+	height: 480px;
+  width: 480px;
+  display: grid;
+  grid-template-columns: repeat(16, auto);
+	border-top: solid black;
+	border-left: solid black;
 }
 
 #grid-container > * {
-	border: 1px solid black;
+  border-right: solid black;
+	border-bottom: solid black;
 }
 
 .color {
-	background-color: black;
+  background-color: black;
+}
+
+.reset {
+	align-self: center;
+	width: 50px;
+	margin: 20px;
 }
