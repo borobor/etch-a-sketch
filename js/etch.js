@@ -5,8 +5,21 @@ for (i = 1; i <= 256; i++) {
 	div.classList.add("grid-item");
 	div.textContent = i;
 	container.appendChild(div);
+}
 
-	div.addEventListener('mouseover', () => {
-		div.classList.add("color");
+const gridItems = document.querySelectorAll(".grid-item");
+
+gridItems.forEach(item => {
+	item.addEventListener('mouseover', () => {
+		item.classList.add("color");
 	});
+});
+
+const resetButton = document.querySelector(".reset");
+resetButton.addEventListener('click', resetGrid);
+
+function resetGrid() {
+	gridItems.forEach(item => {
+		item.classList.remove("color");
+	})
 }
