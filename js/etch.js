@@ -41,7 +41,7 @@ function resetGrid() {
 function draw() {
 gridItems.forEach(item => {
 	item.addEventListener('mouseover', function(event) {
-		randomColor();
+		blackColor();
 	});
 });
 }
